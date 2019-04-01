@@ -1,13 +1,22 @@
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Connect4 extends JFrame{
+public class Connect4Project{
+	public static void main(String args[]) {
+		boolean continuePlay = true;
+		int player1Score = 0;
+		int player2Score = 0;
+		
+		JFrame game = new Connect4();
+		
+	}
+}
+class Connect4 extends JFrame{
 	final static int WIDTH = 10;
 	final static int HEIGHT = 10;
 	final int empty = 0;
@@ -224,11 +233,7 @@ public class Connect4 extends JFrame{
 			  }
 			 
 			}
-	class Winner extends JLabel{
-		 
-	}
-	 
-	 
+class Winner extends JLabel{
 	class Column_1ListenerClass implements ActionListener{
 	 public void actionPerformed(ActionEvent e){
 	  if (Connect4.canDropDisk(0) ){
@@ -276,6 +281,7 @@ public class Connect4 extends JFrame{
 	  }
 	 }
 	}
+
 	 
 	class Column_7ListenerClass implements ActionListener{
 	 public void actionPerformed(ActionEvent e){
@@ -283,5 +289,6 @@ public class Connect4 extends JFrame{
 	   Connect4.dropDisk(6);
 	  }
 	 }
-}
+	}
+	}
 
