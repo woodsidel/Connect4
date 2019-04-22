@@ -89,10 +89,7 @@ public class Connect4 extends JFrame{
 			currentPlayer = 1;
 		}
 		else if (currentPlayer == 1) {
-			currentPlayer = 2;
-		}
-		else { 
-			currentPlayer = 1;
+			currentPlayer = 0;
 		}
 	}
 	
